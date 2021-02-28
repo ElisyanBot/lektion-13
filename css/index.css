@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+}
+
+button {
+  padding: 1.5rem;
+  margin-right: 3rem;
+  background: none;
+  border: none;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+ul {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+ul li {
+  height: 4rem;
+}
+
+ul li a {
+  text-decoration: none;
+  height: 100%;
+  color: white;
+}
+
+.fas {
+  color: white;
+}
+
+header {
+  background-color: #ffa600;
+  width: 100vw;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*desktop meny*/
+}
+
+header nav {
+  width: 1200rem;
+  height: inherit;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .headerLogo {
+  background: black;
+  padding-left: 3rem;
+  height: inherit;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 2rem;
+          flex: 4 1 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .navList {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 6rem;
+          flex: 1 1 6rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .navList .navItems {
+  height: 5rem;
+  /*drop down list*/
+  /* makes the ul section show when you are hover over a nav-link */
+  /* makes the dropdown meny stay as long as the mouse is in that area */
+}
+
+header nav .navList .navItems a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  height: 100%;
+  width: 14rem;
+}
+
+header nav .navList .navItems ul.undersection {
+  display: none;
+  max-width: inherit;
+}
+
+header nav .navList .navItems a:hover {
+  background: #ffbe74;
+}
+
+header nav .navList .navItems a:hover + ul.undersection {
+  background: #db8e46;
+  display: block;
+}
+
+header nav .navList .navItems ul.undersection:hover {
+  background: #db8e46;
+  display: block;
+}
+
+header nav button {
+  display: none;
+}
+
+/*mobile nav meny*/
+#MobileMeny {
+  background: #db8e46;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 12rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#MobileMeny li {
+  width: 25rem;
+  font-size: 2rem;
+}
+
+#MobileMeny li a {
+  text-align: center;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#MobileMeny li a:hover {
+  background-color: #ffbe74;
+}
+
+@media only screen and (max-width: 750px) {
+  nav .navItems {
+    display: none;
+  }
+  nav #MenyBtn {
+    display: block;
+  }
+}
+/*# sourceMappingURL=index.css.map */

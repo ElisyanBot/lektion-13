@@ -1,0 +1,134 @@
+header{
+    background-color: rgb(255, 166, 0);      
+    width: 100vw;
+    height: 5rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   
+    /*desktop meny*/
+    nav{
+        width: 1200rem;
+        height: inherit;
+
+        position: relative;
+        z-index: 1;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .headerLogo{
+            background: rgb(0, 0, 0);
+            padding-left: 3rem;
+            height: inherit;
+            color: white;
+
+            display: flex;
+            flex: 4 1 2rem;
+            align-items: center;
+        }
+
+        
+        .navList{
+            flex: 1 1 6rem;
+            list-style: none;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .navItems{
+                height: 5rem;
+            
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    height: 100%;
+                    width: 14rem;
+                }
+
+                /*drop down list*/
+                ul.undersection{
+                    display: none;
+                    max-width: inherit;
+                    
+                }
+                    a:hover{
+                        background: rgb(255, 190, 116);
+                    }
+                    /* makes the ul section show when you are hover over a nav-link */
+                    a:hover + ul.undersection{
+                        background: rgb(219, 142, 70);
+                        display: block;
+                    }
+
+                    /* makes the dropdown meny stay as long as the mouse is in that area */
+                    ul.undersection:hover {
+                        background:   rgb(219, 142, 70);
+                        display: block;
+                    }
+
+            }
+
+            
+        }
+
+        button{
+            display: none;
+         }
+    }
+}
+
+    /*mobile nav meny*/
+    #MobileMeny{
+        background: rgb(219, 142, 70);;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-height: 12rem;
+
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+            li{
+                width: 25rem;
+                font-size: 2rem;
+
+                a{
+                    text-align: center;
+                    width: inherit;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                a:hover{
+                    background-color: rgb(255, 190, 116);
+                }
+            }
+
+                
+
+
+    }
+
+
+@media only screen and (max-width: 750px) {
+    nav{
+    .navItems{
+        display: none;
+    }
+
+ 
+    #MenyBtn{
+        display: block;
+     }
+}
+}
